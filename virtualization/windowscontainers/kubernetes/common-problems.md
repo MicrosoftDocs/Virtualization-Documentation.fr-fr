@@ -6,12 +6,12 @@ ms.date: 08/13/2020
 ms.topic: troubleshooting
 description: Solutions aux problèmes courants lors du déploiement de Kubernetes et de la jonction de nœuds Windows.
 keywords: kubernetes, Linux, compiler
-ms.openlocfilehash: f96d90f2ab4f7cdfea942badab8fb277c40cb621
-ms.sourcegitcommit: aa139e6e77a27b8afef903fee5c7ef338e1c79d4
+ms.openlocfilehash: 2853386acb564fca768c4f9d8f3b12922670ba18
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88251602"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990732"
 ---
 # <a name="troubleshooting-kubernetes"></a>Résolution des problèmes Kubernetes #
 Cette page décrit plusieurs problèmes courants lors du déploiement, de la mise en réseau et de la configuration de Kubernetes.
@@ -83,7 +83,7 @@ Les utilisateurs de Windows Server version 1903 peuvent accéder à l’emplacem
 ```
 
 ### <a name="containers-on-my-flannel-host-gw-deployment-on-azure-cannot-reach-the-internet"></a>Conteneurs sur mon hôte Flannel-le déploiement GW sur Azure ne peut pas accéder à Internet ###
-Lors du déploiement de Flannel en mode hôte-GW sur Azure, les paquets doivent traverser le vSwitch de l’hôte physique Azure. Les utilisateurs doivent programmer des [itinéraires définis par l’utilisateur](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview#user-defined) de type « appliance virtuelle » pour chaque sous-réseau attribué à un nœud. Pour ce faire, vous pouvez utiliser le Portail Azure (voir un exemple [ici](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal)) ou via `az` Azure CLI. Voici un exemple de UDR avec le nom « MyRoute » à l’aide des commandes AZ pour un nœud avec IP 10.0.0.4 et le sous-réseau Pod respectif 10.244.0.0/24 :
+Lors du déploiement de Flannel en mode hôte-GW sur Azure, les paquets doivent traverser le vSwitch de l’hôte physique Azure. Les utilisateurs doivent programmer des [itinéraires définis par l’utilisateur](/azure/virtual-network/virtual-networks-udr-overview#user-defined) de type « appliance virtuelle » pour chaque sous-réseau attribué à un nœud. Pour ce faire, vous pouvez utiliser le Portail Azure (voir un exemple [ici](/azure/virtual-network/tutorial-create-route-table-portal)) ou via `az` Azure CLI. Voici un exemple de UDR avec le nom « MyRoute » à l’aide des commandes AZ pour un nœud avec IP 10.0.0.4 et le sous-réseau Pod respectif 10.244.0.0/24 :
 ```
 az network route-table create --resource-group <my_resource_group> --name BridgeRoute 
 az network route-table route create  --resource-group <my_resource_group> --address-prefix 10.244.0.0/24 --route-table-name BridgeRoute  --name MyRoute --next-hop-type VirtualAppliance --next-hop-ip-address 10.0.0.4 

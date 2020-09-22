@@ -3,15 +3,16 @@ title: Options réseau avancées dans Windows
 description: Mise en réseau avancée pour les conteneurs Windows.
 keywords: docker, conteneurs
 author: jmesser81
+ms.author: jgerend
 ms.date: 03/27/2018
 ms.topic: how-to
 ms.assetid: 538871ba-d02e-47d3-a3bf-25cda4a40965
-ms.openlocfilehash: 7b533a90587c0853be1fe93090d23b3c34fa2386
-ms.sourcegitcommit: bb18e6568393da748a6d511d41c3acbe38c62668
+ms.openlocfilehash: cd56e5d8b0865af4cbb56835e603d9d21d67a981
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88161728"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990832"
 ---
 # <a name="advanced-network-options-in-windows"></a>Options réseau avancées dans Windows
 
@@ -21,7 +22,7 @@ Plusieurs options de pilote réseau sont prises en charge pour tirer parti des c
 
 > S’applique à tous les pilotes réseau
 
-Vous pouvez tirer parti de [SET (Switch Embedded Teaming)](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/RDMA-and-Switch-Embedded-Teaming#a-namebkmksswitchembeddedaswitch-embedded-teaming-set) lorsque vous créez des réseaux d'hôte de conteneur à utiliser par Docker, en spécifiant plusieurs cartes réseau (séparées par des virgules) à l'aide de l'option `-o com.docker.network.windowsshim.interface`.
+Vous pouvez tirer parti de [SET (Switch Embedded Teaming)](/windows-server/virtualization/hyper-v-virtual-switch/RDMA-and-Switch-Embedded-Teaming#a-namebkmksswitchembeddedaswitch-embedded-teaming-set) lorsque vous créez des réseaux d'hôte de conteneur à utiliser par Docker, en spécifiant plusieurs cartes réseau (séparées par des virgules) à l'aide de l'option `-o com.docker.network.windowsshim.interface`.
 
 ```
 C:\> docker network create -d transparent -o com.docker.network.windowsshim.interface="Ethernet 2", "Ethernet 3" TeamedNet
@@ -115,7 +116,7 @@ C:\> reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Para
 
 #### <a name="linux-containers-on-windows"></a>Conteneurs Linux sur Windows
 
-**Nouveau :** Nous travaillons à la possibilité d’exécuter des conteneurs Linux et Windows côte à côte _sans la machine virtuelle Linux Moby_. Pour plus d’informations, consultez ce billet de [blog sur les conteneurs Linux sur Windows (LCOW)](https://blog.docker.com/2017/11/docker-for-windows-17-11/) . Voici [comment commencer.](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10-linux)
+**Nouveau :** Nous travaillons à la possibilité d’exécuter des conteneurs Linux et Windows côte à côte _sans la machine virtuelle Linux Moby_. Pour plus d’informations, consultez ce billet de [blog sur les conteneurs Linux sur Windows (LCOW)](https://blog.docker.com/2017/11/docker-for-windows-17-11/) . Voici [comment commencer.](../quick-start/quick-start-windows-10-linux.md)
 > Remarque : LCOW déprécie la machine virtuelle Linux Moby, et utilisera le vSwitch interne par défaut « NAT ».
 
 #### <a name="moby-linux-vms-use-dockernat-switch-with-docker-for-windows-a-product-of-docker-ce"></a>Les machines virtuelles Linux Moby utilisent le commutateur DockerNAT avec Docker pour Windows (un produit de [dockr ce](https://www.docker.com/community-edition))
