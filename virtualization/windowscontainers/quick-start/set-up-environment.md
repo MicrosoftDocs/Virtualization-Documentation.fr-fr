@@ -7,12 +7,12 @@ ms.author: crwilhit
 ms.date: 11/12/2019
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 3efd5594afbcf1a9123ea13e046193f18bfa29bc
-ms.sourcegitcommit: bb18e6568393da748a6d511d41c3acbe38c62668
+ms.openlocfilehash: b081984fe364b68db3b5f32b6e008e7bdb9f8b09
+ms.sourcegitcommit: 94901df98f58c9ffdf1b9e91379ca13daa239166
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88161828"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90738899"
 ---
 # <a name="get-started-prep-windows-for-containers"></a>Prise en main : Préparer Windows pour les conteneurs
 
@@ -80,9 +80,22 @@ Pour installer Docker sous Windows Server, vous pouvez utiliser un [module Power
 
 Si vous souhaitez mettre à jour Docker ultérieurement :
 
-- Vérifiez la version installée à l'aide de la commande `Get-Package -Name Docker -ProviderName DockerMsftProvider`
-- Recherchez la version actuelle à l'aide de la commande `Find-Package -Name Docker -ProviderName DockerMsftProvider`
-- Lorsque vous êtes prêt, procédez à la mise à niveau à l'aide de la commande `Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Force`, suivie de `Start-Service Docker`
+- Vérifiez la version installée avec :
+```powershell
+Get-Package -Name Docker -ProviderName DockerMsftProvider
+```
+- Recherchez la version actuelle avec :
+```powershell
+Find-Package -Name Docker -ProviderName DockerMsftProvider
+```
+- Lorsque vous êtes prêt, procédez à la mise à niveau avec :
+```powershell
+Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Force
+```
+, suivi de 
+```powershell
+Start-Service Docker
+```
 
 # <a name="windows-10"></a>[Windows 10](#tab/Windows-10-Client)
 
