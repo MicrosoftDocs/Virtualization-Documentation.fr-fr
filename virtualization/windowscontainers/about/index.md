@@ -3,15 +3,16 @@ title: À propos des conteneurs Windows
 description: Les conteneurs constituent une technologie d’empaquetage et d’exécution d’applications, notamment les applications Windows, dans le cloud et divers environnements locaux. Cette rubrique explique comment Microsoft, Windows et Azure vous aident à développer et déployer des applications dans des conteneurs, notamment avec Docker et Azure Kubernetes Service.
 keywords: docker, conteneurs
 author: taylorb-microsoft
+ms.author: jgerend
 ms.date: 10/22/2019
 ms.topic: overview
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: 0759eef043ed347622f81c7b54a86c673144465d
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 25221fdfac5507d169adcaf95d050bcb06c7baeb
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87984750"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990862"
 ---
 # <a name="windows-and-containers"></a>Windows et conteneurs
 
@@ -24,13 +25,13 @@ Les conteneurs constituent une technologie d’empaquetage et d’exécution d�
 Microsoft fournit un certain nombre d’outils et de plateformes pour vous aider à développer et déployer des applications dans des conteneurs :
 
 - <strong>Exécutez des conteneurs Windows ou Linux sur Windows 10</strong> à des fins de développement et de test avec [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows), ce qui vous permet d’utiliser les fonctionnalités de conteneurs intégrées à Windows. Vous pouvez également [exécuter des conteneurs en mode natif sur Windows Server](../quick-start/set-up-environment.md?tabs=Windows-Server).
-- <strong>Développez, testez, publiez et déployez des conteneurs Windows</strong> avec une [prise en charge solide des conteneurs dans Visual Studio](https://docs.microsoft.com/visualstudio/containers/overview) et [Visual Studio Code](https://code.visualstudio.com/docs/azure/docker), ce qui inclut la prise en charge de Docker, Docker Compose, Kubernetes, Helm et d’autres technologies avantageuses.
+- <strong>Développez, testez, publiez et déployez des conteneurs Windows</strong> avec une [prise en charge solide des conteneurs dans Visual Studio](/visualstudio/containers/overview) et [Visual Studio Code](https://code.visualstudio.com/docs/azure/docker), ce qui inclut la prise en charge de Docker, Docker Compose, Kubernetes, Helm et d’autres technologies avantageuses.
 - <strong>Publiez vos applications sous forme d’images conteneur</strong> sur l’instance DockerHub publique afin que d’autres personnes puissent les utiliser, ou sur une instance [Azure Container Registry](https://azure.microsoft.com/services/container-registry/) privée pour le développement et déploiement de votre propre organisation, en procédant à l’envoi (push) et au tirage (pull) directement à partir de Visual Studio et de Visual Studio Code.
 - <strong>Déployez des conteneurs à grande échelle sur Azure</strong> ou d’autres clouds :
 
-  - Tirez (pull) votre application (image conteneur) d’un registre de conteneurs comme Azure Container Registry, puis déployez-la et gérez-la à grande échelle avec un orchestrateur comme [Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes) ou [Azure Fabric Service](https://docs.microsoft.com/azure/service-fabric/).
+  - Tirez (pull) votre application (image conteneur) d’un registre de conteneurs comme Azure Container Registry, puis déployez-la et gérez-la à grande échelle avec un orchestrateur comme [Azure Kubernetes Service (AKS)](/azure/aks/intro-kubernetes) ou [Azure Fabric Service](/azure/service-fabric/).
   - Azure Fabric Service déploie des conteneurs sur des machines virtuelles Azure et les gère à grande échelle, qu’il s’agisse de douzaines, de centaines, voire de milliers de conteneurs. Les machines virtuelles Azure exécutent une image Windows Server personnalisée (si vous déployez une application Windows) ou une image Ubuntu Linux personnalisée (si vous déployez une application Linux).
-- <strong>Déployez des conteneurs locaux</strong> au moyen d’[Azure Stack avec le moteur AKS](https://docs.microsoft.com/azure-stack/user/azure-stack-kubernetes-aks-engine-overview) (en préversion pour des conteneurs Linux) ou d’[Azure Stack avec OpenShift](https://docs.microsoft.com/azure/virtual-machines/linux/openshift-azure-stack). Vous pouvez également configurer Kubernetes vous-même sur Windows Server (voir [Kubernetes sur Windows](../kubernetes/getting-started-kubernetes-windows.md)) ; nous travaillons également sur la prise en charge de l’exécution des [conteneurs Windows sur RedHat OpenShift Container Platform](https://techcommunity.microsoft.com/t5/Networking-Blog/Managing-Windows-containers-with-Red-Hat-OpenShift-Container/ba-p/339821).
+- <strong>Déployez des conteneurs locaux</strong> au moyen d’[Azure Stack avec le moteur AKS](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview) (en préversion pour des conteneurs Linux) ou d’[Azure Stack avec OpenShift](/azure/virtual-machines/linux/openshift-azure-stack). Vous pouvez également configurer Kubernetes vous-même sur Windows Server (voir [Kubernetes sur Windows](../kubernetes/getting-started-kubernetes-windows.md)) ; nous travaillons également sur la prise en charge de l’exécution des [conteneurs Windows sur RedHat OpenShift Container Platform](https://techcommunity.microsoft.com/t5/Networking-Blog/Managing-Windows-containers-with-Red-Hat-OpenShift-Container/ba-p/339821).
 
 ## <a name="how-containers-work"></a>Fonctionnement des conteneurs
 
@@ -96,9 +97,9 @@ Les orchestrateurs de conteneurs ont été créés pour faciliter la gestion des
 - Affinité de nœud de cluster
 
 Les différents orchestrateurs que vous pouvez utiliser avec les conteneurs Windows sont nombreux. Voici les options que Microsoft fournit :
-- [Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes) : utilisation d’un service Azure Kubernetes managé
-- [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/) : utilisation d’un service managé
-- [Azure Stack avec le moteur AKS](https://docs.microsoft.com/azure-stack/user/azure-stack-kubernetes-aks-engine-overview) : utilisation d’Azure Kubernetes Service en local
+- [Azure Kubernetes Service (AKS)](/azure/aks/intro-kubernetes) : utilisation d’un service Azure Kubernetes managé
+- [Azure Service Fabric](/azure/service-fabric/) : utilisation d’un service managé
+- [Azure Stack avec le moteur AKS](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview) : utilisation d’Azure Kubernetes Service en local
 - [Kubernetes sur Windows](../kubernetes/getting-started-kubernetes-windows.md) : configuration par vous-même de Kubernetes sur Windows
 
 ## <a name="try-containers-on-windows"></a>Essayer les conteneurs sur Windows
@@ -107,4 +108,4 @@ Pour vous familiariser avec les conteneurs sur Windows Server ou Windows 10, co
 > [!div class="nextstepaction"]
 > [Prise en main : Configurer votre environnement pour les conteneurs](../quick-start/set-up-environment.md)
 
-Pour vous aider à choisir les services Azure les plus appropriés pour votre scénario, consultez [Azure Container Services](https://azure.microsoft.com/product-categories/containers/) et [Choisir les services Azure à utiliser pour héberger votre application](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
+Pour vous aider à choisir les services Azure les plus appropriés pour votre scénario, consultez [Azure Container Services](https://azure.microsoft.com/product-categories/containers/) et [Choisir les services Azure à utiliser pour héberger votre application](/azure/architecture/guide/technology-choices/compute-decision-tree).

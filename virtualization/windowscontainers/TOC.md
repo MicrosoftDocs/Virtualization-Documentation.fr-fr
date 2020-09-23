@@ -73,9 +73,9 @@
 
 # Référence
 ## [Cycles de vie de la maintenance des images de base](deploy-containers/base-image-lifecycle.md)
-## [Optimisation de la protection antivirus](https://docs.microsoft.com/windows-hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
+## [Optimisation de la protection antivirus](/windows-hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 ## [Outils de plateforme de conteneurs](deploy-containers/containerd.md)
-## [CLUF de l’image système d’exploitation de conteneur](Images_EULA.md)
+## [CLUF de l’image système d’exploitation de conteneur](./images-eula.md)
 
 # Ressources
 ## [Problèmes connus](manage-containers/known-issues.md)
