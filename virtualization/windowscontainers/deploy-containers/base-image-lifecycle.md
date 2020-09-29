@@ -6,12 +6,12 @@ author: Heidilohr
 ms.author: helohr
 ms.date: 05/12/2020
 ms.topic: reference
-ms.openlocfilehash: 931810ce871dbcbe0c2cd956f4f6325584693af2
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 11dbe56b2cd7f2c88d18560d888f520765748c1e
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985113"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990962"
 ---
 # <a name="base-image-servicing-lifecycles"></a>Cycles de vie de la maintenance des images de base
 
@@ -20,7 +20,7 @@ ms.locfileid: "87985113"
 
 Les images de base de conteneur Windows reposent sur des publications du Canal semi-annuel ou du Canal de maintenance à long terme de Windows Server. Cet article vous indique la durée du support pour les différentes versions des images de base des deux canaux.
 
-Le Canal semi-annuel est une publication de mise à jour de fonctionnalités qui planifie, deux fois par an, des chronologies de maintenance de 18 mois. Il permet aux clients de tirer parti des nouvelles fonctionnalités du système d’exploitation à un rythme plus soutenu, tant dans les applications (en particulier, celles basées sur des conteneurs et microservices), que dans le centre de données hybride à définition logicielle. Pour plus d’informations, consultez la [Présentation du canal semi-annuel de Windows Server](https://docs.microsoft.com/windows-server/get-started/semi-annual-channel-overview).
+Le Canal semi-annuel est une publication de mise à jour de fonctionnalités qui planifie, deux fois par an, des chronologies de maintenance de 18 mois. Il permet aux clients de tirer parti des nouvelles fonctionnalités du système d’exploitation à un rythme plus soutenu, tant dans les applications (en particulier, celles basées sur des conteneurs et microservices), que dans le centre de données hybride à définition logicielle. Pour plus d’informations, consultez la [Présentation du canal semi-annuel de Windows Server](/windows-server/get-started/semi-annual-channel-overview).
 
 Pour les images de Server Core, les clients peuvent également utiliser le Canal de maintenance à long terme qui publie une nouvelle version majeure de Windows Server tous les deux à trois ans. Les publications effectuées via la Canal de maintenance à long terme bénéficient de cinq ans de supports standard et étendu. Ce canal fonctionne avec des systèmes qui nécessitent une option de maintenance et une stabilité fonctionnelle plus longues.
 
@@ -38,4 +38,4 @@ Le tableau suivant répertorie chaque type d’image de base, son canal de maint
 |Server Core                      |À long terme        |2016   |14393   |15/10/2016  |11/01/2022                 |11/01/2027           |
 |Nano Server                      |Semi-annuel      |1607   |14393   |15/10/2016  |10/09/2018                 |NON APPLICABLE                  |
 
-Pour plus d’informations sur les conditions requises pour la maintenance et autres, consultez les pages [FAQ sur le cycle de vie - Produits Windows](https://support.microsoft.com/help/18581/lifecycle-faq-windows-products) et [Informations de publication de Windows Server](https://docs.microsoft.com/windows-server/get-started/windows-server-release-info), ainsi que le [dépôt du Docker Hub Windows base OS images](https://hub.docker.com/_/microsoft-windows-base-os-images).
+Pour plus d’informations sur les conditions requises pour la maintenance et autres, consultez les pages [FAQ sur le cycle de vie - Produits Windows](https://support.microsoft.com/help/18581/lifecycle-faq-windows-products) et [Informations de publication de Windows Server](/windows-server/get-started/windows-server-release-info), ainsi que le [dépôt du Docker Hub Windows base OS images](https://hub.docker.com/_/microsoft-windows-base-os-images).

@@ -3,15 +3,16 @@ title: Créer des comptes de service administré de groupe pour des conteneurs W
 description: Comment créer des comptes de service administré de groupe pour des conteneurs Windows.
 keywords: docker, conteneurs, Active Directory, compte de service administré de groupe, comptes de service administré de groupe
 author: rpsqrd
+ms.author: jgerend
 ms.date: 01/03/2019
 ms.topic: how-to
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
-ms.openlocfilehash: d8faf3d16a7cd07016df334a2299ce4f0eca46f2
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: b8a224a34d5cb666c55190e30b7002e2483cf89c
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985133"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990912"
 ---
 # <a name="create-gmsas-for-windows-containers"></a>Créer des comptes de service administré de groupe pour des conteneurs Windows
 
@@ -19,7 +20,7 @@ Les réseaux Windows utilisent couramment Active Directory (AD) pour faciliter l
 
 Si les conteneurs Windows ne peuvent pas être joints à un domaine, ils peuvent toujours utiliser des identités de domaine Active Directory pour divers scénarios d’authentification.
 
-Pour ce faire, vous pouvez configurer un conteneur Windows pour qu’il s’exécute avec un [compte de service administré de groupe](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview), qui est un type spécial de compte de service introduit dans Windows Server 2012, conçu pour permettre à plusieurs ordinateurs de partager une identité sans avoir besoin de connaître son mot de passe.
+Pour ce faire, vous pouvez configurer un conteneur Windows pour qu’il s’exécute avec un [compte de service administré de groupe](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview), qui est un type spécial de compte de service introduit dans Windows Server 2012, conçu pour permettre à plusieurs ordinateurs de partager une identité sans avoir besoin de connaître son mot de passe.
 
 Quand vous exécutez un conteneur avec un compte de service administré de groupe, l’hôte du conteneur récupère le mot de passe du compte de service administré de groupe à partir d’un contrôleur de domaine Active Directory, et le transmet à l’instance de conteneur. Le conteneur utilise les informations d’identification du compte de service administré de groupe chaque fois que son compte d’ordinateur (système) a besoin d’accéder aux ressources réseau.
 
@@ -29,9 +30,9 @@ Cet article explique comment commencer à utiliser des comptes de service admini
 
 Pour exécuter un conteneur Windows avec un compte de service administré de groupe, vous aurez besoin des éléments suivants :
 
-- Un domaine Active Directory avec au moins un contrôleur de domaine exécutant Windows Server 2012 ou version ultérieure. Aucune exigence de niveau fonctionnel de forêt ou de domaine n’est liée à l’utilisation de comptes de service administré de groupe, mais les mots de passe de ceux-ci ne peuvent être distribués que par des contrôleurs de domaine exécutant Windows Server 2012 ou version ultérieure. Pour plus d’informations, consultez [Exigences Active Directory pour les comptes de service administré de groupe](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts#BKMK_gMSA_Req).
+- Un domaine Active Directory avec au moins un contrôleur de domaine exécutant Windows Server 2012 ou version ultérieure. Aucune exigence de niveau fonctionnel de forêt ou de domaine n’est liée à l’utilisation de comptes de service administré de groupe, mais les mots de passe de ceux-ci ne peuvent être distribués que par des contrôleurs de domaine exécutant Windows Server 2012 ou version ultérieure. Pour plus d’informations, consultez [Exigences Active Directory pour les comptes de service administré de groupe](/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts#BKMK_gMSA_Req).
 - L’autorisation de créer un compte de service administré de groupe. Pour créer un compte de service administré de groupe, vous devez être administrateur de domaine ou utiliser un compte auquel est déléguée l’autorisation *Créer des objets msDS-GroupManagedServiceAccount*.
-- Un accès à Internet pour télécharger le module PowerShell CredentialSpec. Si vous travaillez dans un environnement déconnecté, vous pouvez [enregistrer le module](https://docs.microsoft.com/powershell/module/powershellget/save-module?view=powershell-5.1) sur un ordinateur disposant d’un accès à Internet et le copier sur votre ordinateur de développement ou hôte de conteneur.
+- Un accès à Internet pour télécharger le module PowerShell CredentialSpec. Si vous travaillez dans un environnement déconnecté, vous pouvez [enregistrer le module](/powershell/module/powershellget/save-module?view=powershell-5.1) sur un ordinateur disposant d’un accès à Internet et le copier sur votre ordinateur de développement ou hôte de conteneur.
 
 ## <a name="one-time-preparation-of-active-directory"></a>Préparation unique d’Active Directory
 
@@ -91,7 +92,7 @@ Une fois que vous avez choisi le nom de votre compte de service administré de g
 
 > [!TIP]
 > Vous devez utiliser un compte appartenant au groupe de sécurité **Admins du domaine** ou auquel est déléguée l’autorisation **Créer des objets msDS-GroupManagedServiceAccount** nécessaire pour exécuter les commandes suivantes.
-> La cmdlet [New-ADServiceAccount](https://docs.microsoft.com/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps) fait partie des outils PowerShell Active Directory appelés [Outils d’administration de serveur distant](https://aka.ms/rsat).
+> La cmdlet [New-ADServiceAccount](/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps) fait partie des outils PowerShell Active Directory appelés [Outils d’administration de serveur distant](/troubleshoot/windows-server/system-management-components/remote-server-administration-tools).
 
 ```powershell
 # Replace 'WebApp01' and 'contoso.com' with your own gMSA and domain names, respectively
@@ -120,7 +121,7 @@ Chaque hôte de conteneur appelé à exécuter un conteneur Windows avec un comp
 2. Assurez-vous que votre hôte appartient au groupe de sécurité contrôlant l’accès au mot de passe du compte de service administré de groupe.
 3. Redémarrez l’ordinateur pour qu’il récupère sa nouvelle appartenance de groupe.
 4. Configurez [Docker Desktop pour Windows 10](https://docs.docker.com/docker-for-windows/install/) ou [Docker pour Windows Server](https://docs.docker.com/install/windows/docker-ee/).
-5. (Recommandé) Vérifiez que l’hôte peut utiliser le compte de service administré de groupe en exécutant la commande [test-ADServiceAccount](https://docs.microsoft.com/powershell/module/activedirectory/test-adserviceaccount). Si la commande retourne **False**, suivez les [Instructions de résolution des problèmes](gmsa-troubleshooting.md#make-sure-the-host-can-use-the-gmsa).
+5. (Recommandé) Vérifiez que l’hôte peut utiliser le compte de service administré de groupe en exécutant la commande [test-ADServiceAccount](/powershell/module/activedirectory/test-adserviceaccount). Si la commande retourne **False**, suivez les [Instructions de résolution des problèmes](gmsa-troubleshooting.md#make-sure-the-host-can-use-the-gmsa).
 
     ```powershell
     # To install the AD module on Windows Server, run Install-WindowsFeature RSAT-AD-PowerShell
@@ -194,5 +195,5 @@ Si vous rencontrez des problèmes lors de la configuration, vous trouverez peut-
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-- Pour en savoir plus sur les comptes de service administré de groupe, consultez la [Vue d’ensemble des comptes de service administré de groupe](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
+- Pour en savoir plus sur les comptes de service administré de groupe, consultez la [Vue d’ensemble des comptes de service administré de groupe](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
 - Pour une démonstration vidéo, regardez notre [démonstration enregistrée dans le cadre d’Ignite 2016](https://youtu.be/cZHPz80I-3s?t=2672).

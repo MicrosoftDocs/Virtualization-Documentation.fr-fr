@@ -3,15 +3,16 @@ title: Résoudre des problèmes de comptes de service administré de groupe pour
 description: Comment résoudre des problèmes de comptes de service administré de groupe pour des conteneurs Windows.
 keywords: docker, conteneurs, Active Directory, compte de service administré de groupe, comptes de service administré de groupe, résolution de problèmes, résoudre des problèmes
 author: rpsqrd
+ms.author: jgerend
 ms.date: 10/03/2019
 ms.topic: troubleshooting
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
-ms.openlocfilehash: 771c72ac7b21bf347192ebf88aa86a6cf2c7cddc
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: bffbf326c9a5a7d83625dc4421f8814425a8c680
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985169"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990902"
 ---
 # <a name="troubleshoot-gmsas-for-windows-containers"></a>Résoudre des problèmes de comptes de service administré de groupe pour des conteneurs Windows
 
@@ -44,7 +45,7 @@ Si vous rencontrez des erreurs lors de l’exécution d’un conteneur avec un c
 ### <a name="make-sure-the-host-can-use-the-gmsa"></a>S’assurer que l’hôte peut utiliser le compte de service administré de groupe
 
 1. Vérifiez que l’hôte est joint au domaine et peut atteindre le contrôleur de domaine.
-2. Installez les outils PowerShell Active Directory à partir des Outils d’administration de serveur distant, puis exécutez la cmdlet [test-ADServiceAccount](https://docs.microsoft.com/powershell/module/activedirectory/test-adserviceaccount) pour voir si l’ordinateur a accès à la récupération du compte de service administré de groupe. Si la cmdlet retourne **False**, l’ordinateur n’a pas accès au mot de passe du compte de service administré de groupe.
+2. Installez les outils PowerShell Active Directory à partir des Outils d’administration de serveur distant, puis exécutez la cmdlet [test-ADServiceAccount](/powershell/module/activedirectory/test-adserviceaccount) pour voir si l’ordinateur a accès à la récupération du compte de service administré de groupe. Si la cmdlet retourne **False**, l’ordinateur n’a pas accès au mot de passe du compte de service administré de groupe.
 
     ```powershell
     # To install the AD module on Windows Server, run Install-WindowsFeature RSAT-AD-PowerShell
@@ -124,7 +125,7 @@ Si vous utilisez une stratégie de pare-feu stricte sur le réseau du conteneur 
 | TCP 636 | SSL LDAP |
 
 Vous devrez peut-être autoriser l’accès à des ports supplémentaires en fonction du type de trafic que votre conteneur envoie à un contrôleur de domaine.
-Pour obtenir la liste complète des ports utilisés par Active Directory, consultez [Configuration de ports requise pour Active Directory et Active Directory Domain Services](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)#communication-to-domain-controllers).
+Pour obtenir la liste complète des ports utilisés par Active Directory, consultez [Configuration de ports requise pour Active Directory et Active Directory Domain Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)#communication-to-domain-controllers).
 
 ### <a name="check-the-container"></a>Vérifier le conteneur
 

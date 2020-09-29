@@ -3,15 +3,16 @@ title: Prise en main du mode Swarm
 description: Initialisation d’un cluster Swarm, création d’un réseau de superposition et association d’un service au réseau.
 keywords: docker, conteneurs, swarm, orchestration
 author: kallie-b
+ms.author: jgerend
 ms.date: 02/9/2017
 ms.topic: how-to
 ms.assetid: 5ceb9626-7c48-4d42-81f8-9c936595ad85
-ms.openlocfilehash: c1377818553d81f4f0230f076c3be3dcad90b9cd
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 741a04ee9f6b0a079583c1ff800a154457a1e4c2
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87984993"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990642"
 ---
 # <a name="getting-started-with-swarm-mode"></a>Prise en main du mode Swarm
 
@@ -28,7 +29,7 @@ Les nœuds de travail sont orchestrés par Docker Swarm via les nœuds de gesti
 
 ## <a name="swarm-mode-system-requirements"></a>Configuration requise du mode Swarm
 
-Au moins un ordinateur physique ou un système virtuel (pour utiliser les fonctionnalités complètes du mode Swarm, il est conseillé de disposer d’au moins deux nœuds) exécutant soit **Windows 10 Creators Update**, soit **Windows Server 2016** *avec toutes les dernières mises à jour\** , configuré comme hôte de conteneur. Pour plus d’informations sur la prise en main des conteneurs Docker sur Windows 10, consultez la rubrique [Conteneurs Windows sur Windows 10](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10) ou [Conteneurs Windows sur Windows Server](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+Au moins un ordinateur physique ou un système virtuel (pour utiliser les fonctionnalités complètes du mode Swarm, il est conseillé de disposer d’au moins deux nœuds) exécutant soit **Windows 10 Creators Update**, soit **Windows Server 2016** *avec toutes les dernières mises à jour\** , configuré comme hôte de conteneur. Pour plus d’informations sur la prise en main des conteneurs Docker sur Windows 10, consultez la rubrique [Conteneurs Windows sur Windows 10](/virtualization/windowscontainers/quick-start/quick-start-windows-10) ou [Conteneurs Windows sur Windows Server](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
 \***Remarque** : Docker Swarm sur Windows Server 2016 nécessitent la mise à jour [KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217).
 
@@ -225,7 +226,7 @@ Actuellement, le mode Swarm sur Windows connaît les limitations suivantes :
 - Le [maillage de routage](https://docs.docker.com/engine/swarm/ingress/) pour les hôtes Windows Docker n’est pas pris en charge sur Windows Server 2016, mais uniquement à partir de Windows Server 2019. Les utilisateurs recherchant une autre stratégie d’équilibrage de charge dès aujourd'hui peuvent configurer un équilibreur de charge externe (par exemple, NGINX) et utiliser le [mode de publication de port](https://docs.docker.com/engine/reference/commandline/service_create/#/publish-service-ports-externally-to-the-swarm--p---publish) de Swarm pour exposer les ports d’hôte de conteneur sur lesquels équilibrer la charge. Plus de détails sur ce point ci-dessous.
 
  >[!NOTE]
->Pour plus d’informations sur la configuration de la maille de routage Docker Swarm, consultez ce [billet de blog](https://docs.microsoft.com/virtualization/community/team-blog/2017/20170926-docker-s-routing-mesh-available-with-windows-server-version-1709).
+>Pour plus d’informations sur la configuration de la maille de routage Docker Swarm, consultez ce [billet de blog](/virtualization/community/team-blog/2017/20170926-docker-s-routing-mesh-available-with-windows-server-version-1709).
 
 ## <a name="publish-ports-for-service-endpoints"></a>Publication de ports pour les points de terminaison du service
  Les utilisateurs cherchant à publier des ports pour leurs points de terminaison de service peuvent aujourd’hui le faire à l’aide du mode de publication de port ou de la fonctionnalité de [maillage de routage](https://docs.docker.com/engine/swarm/ingress/) du Docker Swarm.
@@ -261,6 +262,3 @@ Si un hôte de conteneur n'a qu’une seule carte réseau, on risque donc de voi
 Il existe deux façons de contourner ce problème :
 - *Option 1 – Supprimer le réseau transparent existant :* avant d’initialiser un cluster Swarm, vérifiez qu’il n’existe aucun réseau transparent sur votre hôte de conteneur. Supprimez les réseaux transparents pour que votre hôte dispose d'une carte réseau virtuelle libre pouvant servir à créer un réseau de superposition.
 - *Option 2 – Créer une carte réseau (virtuelle) supplémentaire sur votre ordinateur hôte :* Au lieu de supprimer un éventuel réseau transparent présent sur votre ordinateur hôte, vous pouvez créer une carte réseau supplémentaire sur cet hôte et l’utiliser pour créer un réseau de superposition. Pour ce faire, créez simplement une nouvelle carte réseau externe (à l’aide de PowerShell ou du Gestionnaire Hyper-V). Une fois la nouvelle interface en place, lorsque votre cluster Swarm sera initialisé, le service de réseau hôte (HNS) la reconnaîtra automatiquement sur votre ordinateur hôte et l’utilisera pour lier le vSwitch externe afin de créer un réseau de superposition.
-
-
-

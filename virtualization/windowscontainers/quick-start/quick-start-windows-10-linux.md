@@ -3,15 +3,16 @@ title: Configurer des conteneurs Linux sur Windows 10
 description: Démarrage rapide du déploiement de conteneurs
 keywords: docker, conteneurs, LCOW
 author: taylorb-microsoft
+ms.author: jgerend
 ms.date: 08/16/2019
 ms.topic: tutorial
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 0e29a8645e34845895fedcc8dc03c01ea12d07f2
-ms.sourcegitcommit: bb18e6568393da748a6d511d41c3acbe38c62668
+ms.openlocfilehash: cec311f86dfafb122c5aad388872555a636f836e
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88161708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990662"
 ---
 # <a name="get-started-set-up-linux-containers-on-windows-10"></a>Prise en main : Configurer des conteneurs Linux sur Windows 10
 
@@ -28,7 +29,7 @@ Ce démarrage rapide est spécifique à Windows 10. Une documentation suppléme
 
 Assurez-vous que vous remplissez les conditions suivantes :
 - Un ordinateur physique exécutant Windows 10 Professionnel, Windows 10 Entreprise ou Windows Server 2019 version 1809 ou ultérieure
-- Assurez-vous que [Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) est activé.
+- Assurez-vous que [Hyper-V](/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) est activé.
 
 ## <a name="install-docker-desktop"></a>Installer Docker Desktop
 

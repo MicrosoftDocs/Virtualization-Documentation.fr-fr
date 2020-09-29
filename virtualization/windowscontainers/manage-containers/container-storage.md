@@ -3,13 +3,14 @@ title: Vue d’ensemble du stockage de conteneurs
 description: Comment les conteneurs Windows Server peuvent-ils utiliser les hôtes et les autres types de stockage
 keywords: conteneurs, volume, stockage, montage, montage lié
 author: cwilhit
+ms.author: jgerend
 ms.topic: overview
-ms.openlocfilehash: a2d5d3bd3a9682e0c85b0e8a660e1ec2161d68ee
-ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
+ms.openlocfilehash: e5cc4770cfa014ca307db1bb7ec4a3bb81c2dd32
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85192276"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990922"
 ---
 # <a name="container-storage-overview"></a>Vue d’ensemble du stockage de conteneurs
 
@@ -61,10 +62,10 @@ Ligne de commande : `docker run --storage-opt "size=50GB" mcr.microsoft.com/win
 Vous pouvez également modifier directement le fichier de configuration de Docker :
 
 ```Docker Configuration File
-"storage-opt": [
+"storage-opts": [
     "size=50GB"
   ]
 ```
 
 > [!TIP]
-> Cette méthode fonctionne également pour la build de Docker. Consultez le [document Configure docker](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon#configure-docker-with-configuration-file) pour plus d’informations sur la modification du fichier de configuration docker.
+> Cette méthode fonctionne également pour la build de Docker. Consultez le [document Configure docker](../manage-docker/configure-docker-daemon.md#configure-docker-with-a-configuration-file) pour plus d’informations sur la modification du fichier de configuration docker.

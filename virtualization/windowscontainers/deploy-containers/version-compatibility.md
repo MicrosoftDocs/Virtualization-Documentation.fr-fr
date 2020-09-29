@@ -3,13 +3,14 @@ title: Compatibilité des versions avec les conteneurs Windows
 description: Comment Windows peut générer et exécuter des conteneurs dans plusieurs versions
 keywords: métadonnées, conteneurs, version
 author: taylorb-microsoft
+ms.author: jgerend
 ms.topic: conceptual
-ms.openlocfilehash: 23319cba426dccba555956f0a8f1204d3669d6bf
-ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
+ms.openlocfilehash: 05b63a12554b5ba8c7dd665def5166116a1ee0db
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85192146"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990722"
 ---
 # <a name="windows-container-version-compatibility"></a>Compatibilité des versions avec les conteneurs Windows
 
@@ -226,7 +227,7 @@ FROM mcr.microsoft.com/windows/nanoserver:10.0.17763.437
 ...
 ```
 
-Les images de base de Server Core basées sur Windows Server 2019 et Windows Server 2016 sont des mises en production du [Canal de maintenance à long terme](https://docs.microsoft.com/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc). Par exemple, si vous souhaitez que Windows Server 2019 soit le système d’exploitation du conteneur de votre image de Server Core et obtenir des derniers correctifs ad hoc, vous pouvez spécifier les mises en production du Canal de maintenance à long terme comme suit :
+Les images de base de Server Core basées sur Windows Server 2019 et Windows Server 2016 sont des mises en production du [Canal de maintenance à long terme](/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc). Par exemple, si vous souhaitez que Windows Server 2019 soit le système d’exploitation du conteneur de votre image de Server Core et obtenir des derniers correctifs ad hoc, vous pouvez spécifier les mises en production du Canal de maintenance à long terme comme suit :
 
 ```dockerfile
 FROM mcr.microsoft.com/windows/servercore:ltsc2019

@@ -7,12 +7,12 @@ ms.author: crwilhit
 ms.date: 11/12/2019
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: b081984fe364b68db3b5f32b6e008e7bdb9f8b09
-ms.sourcegitcommit: 94901df98f58c9ffdf1b9e91379ca13daa239166
+ms.openlocfilehash: 65860acf545f51a8ba86afcef1872191eda86624
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90738899"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990602"
 ---
 # <a name="get-started-prep-windows-for-containers"></a>Prise en main : Préparer Windows pour les conteneurs
 
@@ -36,7 +36,7 @@ Pour exécuter des conteneurs sous Windows Server, vous devez disposer d'un serv
 Pour exécuter des conteneurs sous Windows 10, vous devez disposer de ce qui suit :
 
 - Un ordinateur physique exécutant Windows 10 Professionnel ou Entreprise et disposant de la Mise à jour anniversaire (version 1607) ou d'une version ultérieure.
-- [Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) doit être activé.
+- [Hyper-V](/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) doit être activé.
 
 > [!NOTE]
 >  Depuis la mise à jour d'octobre 2018 de Windows 10, nous n'interdisons plus aux utilisateurs d'exécuter un conteneur Windows en mode d'isolation des processus sous Windows 10 Entreprise ou Professionnel à des fins de développement/test. Pour en savoir plus, consultez le [Forum Aux Questions (FAQ)](../about/faq.md).

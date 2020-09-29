@@ -3,15 +3,16 @@ title: Déployer des conteneurs Windows sur Windows Server
 description: Déployer des conteneurs Windows sur Windows Server
 keywords: docker, conteneurs
 author: taylorb-microsoft
+ms.author: jgerend
 ms.date: 09/09/2019
 ms.topic: article
 ms.assetid: ba4eb594-0cdb-4148-81ac-a83b4bc337bc
-ms.openlocfilehash: 9bc8071ed5a6a5c8aff385f66299d903ee821070
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: fc2bd93e2582d2cb1a5e77f13babe8a417bb33eb
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985093"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990952"
 ---
 # <a name="container-host-deployment-windows-server"></a>Déploiement d’un hôte de conteneur : Windows Server
 
@@ -109,7 +110,7 @@ docker pull mcr.microsoft.com/windows/nanoserver:1803
 
 ## <a name="hyper-v-isolation-host"></a>Hôte avec Isolation Hyper-V
 
-Pour activer l’isolation Hyper-V, vous devez disposer du rôle Hyper-V. Si l’hôte de conteneur Windows est lui-même une machine virtuelle Hyper-V, la virtualisation imbriquée doit être activée avant d’installer le rôle Hyper-V. Pour plus d’informations sur la virtualisation imbriquée, voir [Virtualisation imbriquée](https://docs.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization).
+Pour activer l’isolation Hyper-V, vous devez disposer du rôle Hyper-V. Si l’hôte de conteneur Windows est lui-même une machine virtuelle Hyper-V, la virtualisation imbriquée doit être activée avant d’installer le rôle Hyper-V. Pour plus d’informations sur la virtualisation imbriquée, voir [Virtualisation imbriquée](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization).
 
 ### <a name="nested-virtualization"></a>Virtualisation imbriquée
 

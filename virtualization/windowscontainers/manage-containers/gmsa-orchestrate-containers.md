@@ -3,15 +3,16 @@ title: Orchestrer des conteneurs avec un compte de service administré de groupe
 description: Comment orchestrer des conteneurs Windows avec un compte de service administré de groupe.
 keywords: docker, conteneurs, ACTIVE DIRECTORY, compte de service administré de groupe, orchestration, kubernetes, comptes de service administré de groupe
 author: rpsqrd
+ms.author: jgerend
 ms.date: 09/10/2019
 ms.topic: how-to
 ms.assetid: 9e06ad3a-0783-476b-b85c-faff7234809c
-ms.openlocfilehash: 00bc05d3d96407d19b96620b3b26059f4ac9e313
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 64a5e5c010922bcc5e61f41c047ac965c4f31415
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985253"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990892"
 ---
 # <a name="orchestrate-containers-with-a-gmsa"></a>Orchestrer des conteneurs avec un compte de service administré de groupe
 
@@ -29,7 +30,7 @@ Quand vous orchestrez des conteneurs avec des comptes de service administré de 
 
 Service Fabric prend en charge l’exécution de conteneurs Windows avec un compte de service administré de groupe quand vous spécifiez l’emplacement des spécifications d’informations d’identification dans le manifeste de votre application. Vous devez créer le fichier de spécification d’informations d’identification et le placer dans le sous-répertoire **CredentialSpecs** du répertoire de données de Docker sur chaque hôte afin que Service Fabric puisse le localiser. Vous pouvez exécuter la cmdlet **CredentialSpec**, qui fait partie du [module PowerShell CredentialSpec](https://aka.ms/credspec), pour vérifier si vos spécifications d’informations d’identification se trouvent à l’emplacement approprié.
 
-Pour plus d’informations sur la configuration de votre application, consultez [Démarrage rapide : déployer des conteneurs Windows sur Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-containers) et [Configurer un compte de service administré de groupe pour des conteneurs Windows s’exécutant sur Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-setup-gmsa-for-windows-containers).
+Pour plus d’informations sur la configuration de votre application, consultez [Démarrage rapide : déployer des conteneurs Windows sur Service Fabric](/azure/service-fabric/service-fabric-quickstart-containers) et [Configurer un compte de service administré de groupe pour des conteneurs Windows s’exécutant sur Service Fabric](/azure/service-fabric/service-fabric-setup-gmsa-for-windows-containers).
 
 ## <a name="how-to-use-gmsa-with-docker-swarm"></a>Comment utiliser un compte de service administré de groupe avec Docker Swarm
 

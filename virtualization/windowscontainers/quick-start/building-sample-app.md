@@ -6,12 +6,12 @@ author: cwilhit
 ms.author: crwilhit
 ms.date: 11/12/2019
 ms.topic: quickstart
-ms.openlocfilehash: 956c90b5975f7b290395953fed04a3ed99bf6960
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: e04e4ee4c38409dfd20e4426d586839e1741651e
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87984903"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990652"
 ---
 # <a name="containerize-a-net-core-app"></a>Conteneuriser une application .NET Core
 
@@ -133,9 +133,9 @@ Une fois le fichier Dockerfile écrit, nous pouvons pointer Docker sur notre fic
 1. L’étape suivante consiste à publier votre application web ASP.NET en conteneur dans un registre privé à l’aide d'Azure Container Registry. Vous pouvez ainsi la déployer au sein de votre organisation.
 
    > [!div class="nextstepaction"]
-   > [Créer un Registre de conteneurs privé](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell)
+   > [Créer un Registre de conteneurs privé](/azure/container-registry/container-registry-get-started-powershell)
 
-   Lorsque vous accédez à la section où vous [transmettez (push) votre image de conteneur au registre](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell#push-image-to-registry), spécifiez le nom de l’application ASP.NET que vous venez d'empaqueter (`my-asp-app`), ainsi que votre registre de conteneurs (par exemple : `contoso-container-registry`) :
+   Lorsque vous accédez à la section où vous [transmettez (push) votre image de conteneur au registre](/azure/container-registry/container-registry-get-started-powershell#push-image-to-registry), spécifiez le nom de l’application ASP.NET que vous venez d'empaqueter (`my-asp-app`), ainsi que votre registre de conteneurs (par exemple : `contoso-container-registry`) :
 
    ```PowerShell
    docker tag my-asp-app contoso-container-registry.azurecr.io/my-asp-app:v1
@@ -146,4 +146,4 @@ Une fois le fichier Dockerfile écrit, nous pouvons pointer Docker sur notre fic
 2. Après avoir publié votre application dans le registre de conteneurs, l’étape suivante consiste à déployer l’application dans un cluster Kubernetes que vous créez avec Azure Kubernetes Service.
 
    > [!div class="nextstepaction"]
-   > [Créer un cluster Kubernetes](https://docs.microsoft.com/azure/aks/windows-container-cli)
+   > [Créer un cluster Kubernetes](/azure/aks/windows-container-cli)

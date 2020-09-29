@@ -3,13 +3,14 @@ title: Appareils dans des conteneurs sur Windows
 description: Quelle prise en charge des appareils existe-t-il pour les conteneurs sur Windows
 keywords: docker, conteneurs, appareils, matériel
 author: cwilhit
+ms.author: jgerend
 ms.topic: how-to
-ms.openlocfilehash: bef8e3236294588e38d7bff235ed1d3a98278375
-ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
+ms.openlocfilehash: 8ada973b6e79837374c5f3d918fb4c60da031b49
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85192174"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990942"
 ---
 # <a name="devices-in-containers-on-windows"></a>Appareils dans les conteneurs sur Windows
 
@@ -31,7 +32,7 @@ Pour démarrer un conteneur avec un appareil, utilisez la commande suivante :
 docker run --isolation=process --device="class/{interface class GUID}" mcr.microsoft.com/windows/servercore:1809
 ```
 
-Vous devez remplacer `{interface class guid}` par un [GUID de classe d’interface d’appareil approprié](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-interface-classes), que vous trouverez dans la section ci-dessous.
+Vous devez remplacer `{interface class guid}` par un [GUID de classe d’interface d’appareil approprié](/windows-hardware/drivers/install/overview-of-device-interface-classes), que vous trouverez dans la section ci-dessous.
 
 Pour démarrer un conteneur avec plusieurs appareils, utilisez la commande suivante en enchaînant plusieurs arguments `--device` :
 
@@ -73,7 +74,7 @@ Les appareils pris en charge aujourd’hui (et leurs GUID de classe d’interfac
 </tr>
 <tr valign="top">
 <td><center>Accélération GPU DirectX</center></td>
-<td><center>Voir les documents sur l’<a href="https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/gpu-acceleration">accélération GPU</a></center></td>
+<td><center>Voir les documents sur l’<a href="/virtualization/windowscontainers/deploy-containers/gpu-acceleration">accélération GPU</a></center></td>
 </tr>
 </tbody>
 </table>

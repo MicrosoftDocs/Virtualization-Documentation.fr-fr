@@ -7,12 +7,12 @@ ms.author: taylorb
 ms.date: 10/22/2019
 ms.topic: deployment-article
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
-ms.openlocfilehash: 14147ac71b5c10b3d633b2ccf205fe66489e417d
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: ac6012bc5042d7883dc6a1769e292c2f6ace0997
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985073"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990762"
 ---
 # <a name="windows-container-requirements"></a>Configuration requise pour un conteneur Windows
 
@@ -35,7 +35,7 @@ Si un hôte de conteneur Windows doit être exécuté sur une machine virtuelle 
 
 ### <a name="memory-requirements"></a>Mémoire requise
 
-Les restrictions applicables à la mémoire disponible pour les conteneurs peuvent être configurées via [les contrôles de ressources](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/resource-controls) ou la surcharge d’un hôte de conteneur.  La quantité minimale de mémoire requise pour lancer un conteneur et exécuter des commandes de base (ipconfig dir, etc.) est indiquée ci-dessous.
+Les restrictions applicables à la mémoire disponible pour les conteneurs peuvent être configurées via [les contrôles de ressources](../manage-containers/resource-controls.md) ou la surcharge d’un hôte de conteneur.  La quantité minimale de mémoire requise pour lancer un conteneur et exécuter des commandes de base (ipconfig dir, etc.) est indiquée ci-dessous.
 
 >[!NOTE]
 >Ces valeurs ne tiennent pas compte du partage de ressources entre les conteneurs ou de la configuration requise par l’application en cours d’exécution dans le conteneur.  Par exemple, un hôte avec 512 Mo de mémoire disponible peut exécuter plusieurs conteneurs Server Core sous isolation Hyper-V, car ces conteneurs partagent des ressources.
