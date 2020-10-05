@@ -3,15 +3,16 @@ title: Plateforme de conteneur Windows
 description: Apprenez-en davantage sur les nouveaux blocs de construction de conteneur disponibles dans Windows.
 keywords: conteneurs Linux, docker, conteneurs, mise en conteneur, conteneurisation, runhcs, runc, containerd
 author: scooley
+ms.author: jgerend
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: a0e62b32-0c4c-4dd4-9956-8056e9abd9e5
-ms.openlocfilehash: 10f6a453b4c9352763c1e83b126576f250614af4
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 55c404252dc9243070631e2012326d4b0cca886f
+ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985363"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90990972"
 ---
 # <a name="container-platform-tools-on-windows"></a>Outils de plateforme de conteneurs sur Windows
 
@@ -19,7 +20,7 @@ La plateforme de conteneurs Windows est en cours expansion. Après Docker, premi
 
 * [containerd/cri](https://github.com/containerd/cri) : nouveauté dans Windows Server 2019/Windows 10 1809.
 * [runhcs](https://github.com/Microsoft/hcsshim/tree/master/cmd/runhcs) : hôte de conteneur Windows équivalent de runc pour Linux.
-* [hcs](https://docs.microsoft.com/virtualization/api/) : service de calcul hôte + shims pratiques pour faciliter son utilisation.
+* [hcs](/virtualization/api/) : service de calcul hôte + shims pratiques pour faciliter son utilisation.
   * [hcsshim](https://github.com/microsoft/hcsshim)
   * [dotnet-computevirtualization](https://github.com/microsoft/dotnet-computevirtualization)
 
