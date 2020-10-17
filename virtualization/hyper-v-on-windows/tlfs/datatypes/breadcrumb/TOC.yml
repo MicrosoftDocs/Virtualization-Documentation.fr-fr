@@ -1,0 +1,7 @@
+- name: Spécification de l’hyperviseur
+  tocHref: /virtualization/hyper-v-on-windows/tlfs/datatypes/
+  topicHref: /virtualization/hyper-v-on-windows/tlfs/tlfs
+  items:
+    - name: Types de données
+      tocHref: /virtualization/hyper-v-on-windows/tlfs/datatypes/
+      topicHref: /virtualization/hyper-v-on-windows/tlfs/datatypes/overview

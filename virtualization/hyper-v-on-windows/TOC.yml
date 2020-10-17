@@ -1,0 +1,52 @@
+- name: Présentation d'Hyper-V
+  href: ./about/index.md
+- name: "Installer\_Hyper-V"
+  href: quick-start/enable-hyper-v.md
+- name: Créer une machine virtuelle
+  href: quick-start/quick-create-virtual-machine.md
+- name: Gérer des machines virtuelles avec Hyper-V
+  items:
+    - name: Hyper-V et PowerShell
+      href: quick-start/try-hyper-v-powershell.md
+    - name: Partager des périphériques avec des ordinateurs virtuels
+      href: user-guide/enhanced-session-mode.md
+    - name: Utiliser des points de contrôle
+      href: user-guide/checkpoints.md
+    - name: Se connecter à PowerShell Direct
+      href: user-guide/powershell-direct.md
+    - name: Créer des machines virtuelles en préversion
+      href: user-guide/create-pre-release-vm.md
+- name: Gérer les hôtes Hyper-V
+  items:
+    - name: Activer la virtualisation imbriquée
+      href: user-guide/nested-virtualization.md
+    - name: Créer une galerie de machines virtuelles personnalisée
+      href: user-guide/custom-gallery.md
+    - name: Configurer un réseau NAT
+      href: user-guide/setup-nat-network.md
+    - name: Créer un commutateur virtuel
+      href: quick-start/connect-to-network.md
+    - name: Créer un service d’intégration
+      href: user-guide/make-integration-service.md
+    - name: Port Hyper-V WMI
+      href: user-guide/refactor-wmiv1-to-wmiv2.md
+- name: Informations de référence
+  items:
+    - name: Configuration requise pour Hyper-V
+      href: reference/hyper-v-requirements.md
+    - name: Systèmes d’exploitation invités pris en charge
+      href: about/supported-guest-os.md
+    - name: PowerShell Hyper-V
+      href: 'https://docs.microsoft.com/powershell/module/hyper-v/index?view=win10-ps'
+    - name: Services d’intégration Hyper-V
+      href: reference/integration-services.md
+    - name: Architecture Hyper-V
+      href: reference/hyper-v-architecture.md
+    - name: Spécification de l’hyperviseur
+      href: tlfs/TOC.yml
+    - name: Approches de la sauvegarde Hyper-V
+      href: reference/HyperVBackupApproaches.md
+- name: Communauté et Support
+  items:
+    - name: Forums Hyper-V
+      href: 'https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverhyperv'

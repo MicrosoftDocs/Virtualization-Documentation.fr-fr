@@ -1,0 +1,7 @@
+- name: Spécification de l’hyperviseur
+  tocHref: /virtualization/hyper-v-on-windows/tlfs/hypercalls/
+  topicHref: /virtualization/hyper-v-on-windows/tlfs/tlfs
+  items:
+    - name: Informations de référence sur les hyperappels
+      tocHref: /virtualization/hyper-v-on-windows/tlfs/hypercalls/
+      topicHref: /virtualization/hyper-v-on-windows/tlfs/hypercalls/overview
