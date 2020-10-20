@@ -6,12 +6,12 @@ author: Heidilohr
 ms.author: helohr
 ms.date: 05/12/2020
 ms.topic: reference
-ms.openlocfilehash: 11dbe56b2cd7f2c88d18560d888f520765748c1e
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 2e5396dcec67724b850d45cb29010191bba9a732
+ms.sourcegitcommit: 91652cc3ec171e8655bb1a8bc06d433fce457e53
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990962"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92156493"
 ---
 # <a name="base-image-servicing-lifecycles"></a>Cycles de vie de la maintenance des images de base
 
@@ -32,7 +32,8 @@ Le tableau suivant répertorie chaque type d’image de base, son canal de maint
 |Server Core, Nano Server, Windows|Semi-annuel      |1909   |18363   |12/11/2019  |11/05/2021                 |NON APPLICABLE                  |
 |Server Core, Nano Server, Windows|Semi-annuel      |1903   |18362   |21/05/2019  |08/12/2020                 |NON APPLICABLE                  |
 |Server Core                      |À long terme        |2019   |17763   |13/11/2018  |09/01/2024                 |09/01/2029           |
-|Server Core, Nano Server, Windows|Semi-annuel      |1809   |17763   |13/11/2018  |10/11/2020                 |NON APPLICABLE                  |
+|Nano Server                      |Semi-annuel      |1809   |17763   |13/11/2018  |09/01/2024                 |NON APPLICABLE                  |
+|Server Core, Windows             |Semi-annuel      |1809   |17763   |13/11/2018  |10/11/2020                 |NON APPLICABLE                  |
 |Server Core, Nano Server         |Semi-annuel      |1803   |17134   |30/04/2018  |12/11/2019                 |NON APPLICABLE                  |
 |Server Core, Nano Server         |Semi-annuel      |1709   |16299   |17/10/2017  |09/04/2019                 |NON APPLICABLE                  |
 |Server Core                      |À long terme        |2016   |14393   |15/10/2016  |11/01/2022                 |11/01/2027           |
