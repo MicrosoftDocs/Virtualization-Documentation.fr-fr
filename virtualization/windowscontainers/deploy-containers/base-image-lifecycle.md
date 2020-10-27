@@ -4,14 +4,14 @@ description: Informations sur le cycle de vie des images de base de conteneur Wi
 keywords: conteneurs windows, conteneurs, cycle de vie, informations sur la publication, image de base, image de base de conteneur
 author: Heidilohr
 ms.author: helohr
-ms.date: 05/12/2020
+ms.date: 10/20/2020
 ms.topic: reference
-ms.openlocfilehash: 2e5396dcec67724b850d45cb29010191bba9a732
-ms.sourcegitcommit: 91652cc3ec171e8655bb1a8bc06d433fce457e53
+ms.openlocfilehash: a5076e0c355090e0487e074191bf706966f9767a
+ms.sourcegitcommit: 530c146a8e43b5cd5ce96b272facb7dd9d3c42da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92156493"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92238862"
 ---
 # <a name="base-image-servicing-lifecycles"></a>Cycles de vie de la maintenance des images de base
 
@@ -28,6 +28,7 @@ Le tableau suivant répertorie chaque type d’image de base, son canal de maint
 
 |Base image                       |Canal de maintenance|Version|Build du système d’exploitation|Disponibilité|Date de fin du support standard|Date de support étendue|
 |---------------------------------|-----------------|-------|--------|------------|---------------------------|---------------------|
+|Server Core, Nano Server, Windows|Semi-annuel      |20H2   |19042   |20/10/2020  |10/05/2022                 |NON APPLICABLE                  |
 |Server Core, Nano Server, Windows|Semi-annuel      |2004   |19041   |27/05/2020  |14/12/2021                 |NON APPLICABLE                  |
 |Server Core, Nano Server, Windows|Semi-annuel      |1909   |18363   |12/11/2019  |11/05/2021                 |NON APPLICABLE                  |
 |Server Core, Nano Server, Windows|Semi-annuel      |1903   |18362   |21/05/2019  |08/12/2020                 |NON APPLICABLE                  |
