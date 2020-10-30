@@ -79,7 +79,9 @@
   "notification_subscribers": [
     "benarm@microsoft.com"
   ],
-  "sync_notification_subscribers": [],
+  "sync_notification_subscribers": [
+    "ceicnotifications@microsoft.com"
+  ],
   "branches_to_filter": [
     "live-sync-work",
     "live",
