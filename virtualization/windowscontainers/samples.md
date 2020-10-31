@@ -6,12 +6,12 @@ author: cwilhit
 ms.date: 12/19/2016
 ms.topic: article
 ms.assetid: 5c6f6350-f8d6-4426-b53d-9fb09c2bf267
-ms.openlocfilehash: 087aecdae317a81338071def3046fb01511ca152
-ms.sourcegitcommit: bb18e6568393da748a6d511d41c3acbe38c62668
+ms.openlocfilehash: cf8a02158f5c9840291e5ad74f8801da46d3fa20
+ms.sourcegitcommit: 607413572dce012c2e09263c7b6dd984086cd9ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88161908"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93074844"
 ---
 # <a name="windows-container-samples"></a>Exemples de conteneurs Windows
 
@@ -67,7 +67,7 @@ Il s’agit d’une collection d’exemples soumis par l’équipe Windows et le
 
 [SQLite](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/sqlite)
 
-sqlserver-express - [Image Docker Hub](https://hub.docker.com/r/microsoft/mssql-server-windows-express/) ou [fichier dockerfile](https://github.com/Microsoft/mssql-docker/blob/master/windows/mssql-server-windows-express/dockerfile)
+[sqlserver-express](https://github.com/microsoft/mssql-docker/tree/master/windows)
 
 ### <a name="infrastructure-and-ci-tools"></a>Infrastructure et outils d’intégration continue
 
@@ -77,6 +77,6 @@ sqlserver-express - [Image Docker Hub](https://hub.docker.com/r/microsoft/mssql-
 
 [MineCraft](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-container-samples/MineCraft)
 
-### <a name="other"></a>Autres
+### <a name="other"></a>Autre
 
 [DirectX](https://github.com/MicrosoftDocs/Virtualization-Documentation/tree/master/windows-container-samples/directx) (y compris l’accélération GPU)
