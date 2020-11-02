@@ -5,12 +5,12 @@ keywords: docker, conteneurs
 ms.topic: quickstart
 author: cwilhit
 ms.author: jgerend
-ms.openlocfilehash: a438666c75671e935ce8e8999e92b9c828043d94
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: b7ea858bfe1cb3dd6c3e9ff6e277cf33fdb74aad
+ms.sourcegitcommit: 607413572dce012c2e09263c7b6dd984086cd9ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990632"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93074932"
 ---
 # <a name="build-and-run-an-application-with-or-without-net-core-20-or-powershell-core-6"></a>Créer et exécuter une application avec ou sans .NET Core 2.0 ou PowerShell Core 6
 
@@ -21,7 +21,7 @@ Si votre conteneur doit exécuter du code natif ou des infrastructures ouvertes 
 Pour créer votre conteneur à partir d’un fichier Dockerfile, utilisez la commande docker build, puis pour l’exécuter, utilisez la commande docker run.  La commande suivante télécharge l’image de base du système d’exploitation du conteneur Nano Server, ce qui peut prendre quelques minutes, et imprime un message « Hello World ! » sur la console de l’hôte.
 
 ```
-docker run microsoft/nanoserver-insider cmd /c echo Hello World!
+docker run windows/nanoserver/insider cmd /c echo Hello World!
 ```
 
 Vous pouvez générer des applications plus complexes à l’aide de [fichiers Dockerfile sur Windows](../manage-docker/manage-windows-dockerfile.md), avec la syntaxe de fichier Dockerfile, par exemple, FROM, RUN, COPY, ADD, CMD, etc.  S'il ne vous est pas possible d'exécuter certaines commandes à partir de cette image de base, vous pouvez cependant créer des images de conteneur comprenant uniquement les éléments requis pour le bon fonctionnement de votre application.
@@ -31,20 +31,19 @@ Vous pouvez générer des applications plus complexes à l’aide de [fichiers D
 Vous pouvez extraire l’image du conteneur PowerShell à l’aide de cette commande :
 
 ```
-docker pull microsoft/nanoserver-insider-powershell
+docker pull windows/nanoserver/insider-powershell
 ```
 
 Vous pouvez extraire l’image du conteneur .NET Core à l’aide de cette commande :
 
 ```
-docker pull microsoft/nanoserver-insider-dotnet
+docker pull windows/nanoserver/insider-dotnet
 ```
 
 Voici quelques exemples d’utilisation de créations échelonnées pour la création de ces images de conteneur.
 
 ## <a name="deploy-apps-based-on-net-core-20"></a>Déployer des applications basées sur .NET Core 2.0
-Vous pouvez exploiter l’image de conteneur .NET Core 2.0 de la version Insider pour exécuter vos applications .NET Core si votre application .NET Core est créée à un autre emplacement et que vous souhaitez l’exécuter dans le conteneur.  Des informations supplémentaires sur l’exécution d’une application .NET Core avec les images de conteneur .NET Core sont disponibles à partir de [.NET Core GitHub](https://github.com/dotnet/dotnet-docker-nightly).  Si vous développez une application dans le conteneur, utilisez le Kit de développement logiciel (SDK) .NET Core à la place.  Les utilisateurs avancés peuvent créer leur propre conteneur .NET Core 2.0 avec la version .NET Core 2.0, un fichier Dockerfile et l’URL spécifiée dans [dotnet-docker-nightly](https://github.com/dotnet/dotnet-docker-nightly/tree/master/2.0). Pour ce faire, ils peuvent utiliser un conteneur Windows Server Core pour télécharger et décompresser les fichiers.  L’exemple de fichier Dockerfile est identique au [fichier Dockerfile .NET Core Runtime](https://github.com/dotnet/dotnet-docker-nightly/blob/master/2.0/runtime/nanoserver-insider/amd64/Dockerfile).
-
+Vous pouvez exploiter l’image de conteneur .NET Core 2.0 de la version Insider pour exécuter vos applications .NET Core si votre application .NET Core est créée à un autre emplacement et que vous souhaitez l’exécuter dans le conteneur.  Des informations supplémentaires sur l’exécution d’une application .NET Core avec les images de conteneur .NET Core sont disponibles à partir de [.NET Core GitHub](https://github.com/dotnet/dotnet-docker-nightly).  Si vous développez une application dans le conteneur, utilisez le Kit de développement logiciel (SDK) .NET Core à la place.  Les utilisateurs avancés peuvent créer leur propre conteneur .NET Core 2.0 avec la version .NET Core 2.0, un fichier Dockerfile et l’URL spécifiée dans [dotnet-docker-nightly](https://github.com/dotnet/dotnet-docker-nightly/tree/master/2.0). Pour ce faire, ils peuvent utiliser un conteneur Windows Server Core pour télécharger et décompresser les fichiers.  L’exemple de fichier Dockerfile est identique au [fichier Dockerfile .NET Core Runtime](https://github.com/dotnet/dotnet-docker-nightly/blob/master/2.0/runtime).
 
 Avec ce fichier Dockerfile, un conteneur .NET Core 2.0 peut être créé à l’aide de la commande suivante.
 
