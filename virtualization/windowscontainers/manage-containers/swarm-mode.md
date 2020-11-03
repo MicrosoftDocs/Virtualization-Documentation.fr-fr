@@ -7,12 +7,12 @@ ms.author: jgerend
 ms.date: 02/9/2017
 ms.topic: how-to
 ms.assetid: 5ceb9626-7c48-4d42-81f8-9c936595ad85
-ms.openlocfilehash: 741a04ee9f6b0a079583c1ff800a154457a1e4c2
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 775de3b2a1b7d0379689ba7f813b662a0ab3959b
+ms.sourcegitcommit: a5cd6c4477a5aee8d2a66c588ac5f799f6e8b035
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990642"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044305"
 ---
 # <a name="getting-started-with-swarm-mode"></a>Prise en main du mode Swarm
 
@@ -29,9 +29,9 @@ Les nœuds de travail sont orchestrés par Docker Swarm via les nœuds de gesti
 
 ## <a name="swarm-mode-system-requirements"></a>Configuration requise du mode Swarm
 
-Au moins un ordinateur physique ou un système virtuel (pour utiliser les fonctionnalités complètes du mode Swarm, il est conseillé de disposer d’au moins deux nœuds) exécutant soit **Windows 10 Creators Update**, soit **Windows Server 2016** *avec toutes les dernières mises à jour\** , configuré comme hôte de conteneur. Pour plus d’informations sur la prise en main des conteneurs Docker sur Windows 10, consultez la rubrique [Conteneurs Windows sur Windows 10](/virtualization/windowscontainers/quick-start/quick-start-windows-10) ou [Conteneurs Windows sur Windows Server](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+Au moins un ordinateur physique ou un système virtuel (pour utiliser les fonctionnalités complètes du mode Swarm, il est conseillé de disposer d’au moins deux nœuds) exécutant soit **Windows 10 Creators Update** , soit **Windows Server 2016** *avec toutes les dernières mises à jour\** , configuré comme hôte de conteneur. Pour plus d’informations sur la prise en main des conteneurs Docker sur Windows 10, consultez la rubrique [Conteneurs Windows sur Windows 10](../quick-start/set-up-environment.md) ou [Conteneurs Windows sur Windows Server](../quick-start/set-up-environment.md).
 
-\***Remarque** : Docker Swarm sur Windows Server 2016 nécessitent la mise à jour [KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217).
+\**_Remarque_*  : Docker Swarm sur Windows Server 2016 nécessitent la mise à jour [KB4015217](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217).
 
 **Moteur Docker v1.13.0 ou ultérieur**
 
@@ -79,7 +79,7 @@ D’autres nœuds de gestionnaire peuvent être ajoutés à un cluster Swarm à 
 C:\> docker swarm join --token <MANAGERJOINTOKEN> <MANAGERIPADDRESS>
 ```
 
-Là encore, \<MANAGERIPADDRESS\> est l’adresse IP locale d’un nœud de gestionnaire de cluster Swarm. Le jeton de jointure \<MANAGERJOINTOKEN\> est un jeton-jointure de *gestionnaire*, qui peut être obtenu en exécutant l’une des commandes suivantes à partir d’un nœud de gestionnaire existant :
+Là encore, \<MANAGERIPADDRESS\> est l’adresse IP locale d’un nœud de gestionnaire de cluster Swarm. Le jeton de jointure \<MANAGERJOINTOKEN\> est un jeton-jointure de *gestionnaire* , qui peut être obtenu en exécutant l’une des commandes suivantes à partir d’un nœud de gestionnaire existant :
 
 ```
 # Get the full command required to join a **manager** node to the swarm
@@ -190,7 +190,7 @@ C:\> docker node update --label-add <LABELNAME>=<LABELVALUE> <NODENAME>
 
 Ici, `<LABELNAME>` est le nom de l’étiquette que vous créez. Dans ce cas, par exemple, puisque nous allons distinguer les nœuds selon leur système d’exploitation, il serait logique de nommer l’étiquette « système d’exploitation ». `<LABELVALUE>` est la valeur de l’étiquette (dans ce cas, vous pouvez choisir d’utiliser les valeurs « windows » et « linux »). (Bien entendu, vous pouvez nommer les étiquettes et leurs valeurs comme vous l'entendez, tant que vous restez cohérent). `<NODENAME>` est le nom du nœud que vous étiquetez. Vous pouvez vous retrouver les noms de vos nœuds en exécutant la commande `docker node ls`.
 
-**Par exemple**, si vous avez quatre nœuds dans votre cluster Swarm, dont deux nœuds Windows et deux nœuds Linux, vos commandes de mise à jour de l’étiquette peuvent ressembler à ceci :
+**Par exemple** , si vous avez quatre nœuds dans votre cluster Swarm, dont deux nœuds Windows et deux nœuds Linux, vos commandes de mise à jour de l’étiquette peuvent ressembler à ceci :
 
 ```
 # Example -- labeling 2 Windows nodes and 2 Linux nodes in a cluster...
