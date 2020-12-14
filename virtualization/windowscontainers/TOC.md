@@ -15,6 +15,8 @@
 ## Créer un conteneur Windows
 ### [Écrire un Dockerfile](manage-docker/manage-windows-dockerfile.md)
 ### [Optimiser un Dockerfile](manage-docker/optimize-windows-dockerfile.md)
+## Exécuter sur Azure Kubernetes Service sur Azure Stack HCI
+### [Créer un cluster Kubernetes sur Azure Stack HCI](/azure-stack/aks-hci/create-kubernetes-cluster) 
 ## Exécuter sur Azure Kubernetes Services
 ### [Créer un cluster de conteneurs Windows sur AKS](/azure/aks/windows-container-cli)
 ### [Limitations actuelles](/azure/aks/windows-node-limitations)
@@ -52,13 +54,14 @@
 ### Docker Swarm
 #### [Mode Swarm](manage-containers/swarm-mode.md)
 ## Charges de travail
+### [Services d’impression](deploy-containers/print-spooler.md)
+## Sécurité
 ### Group Managed Service Accounts
 #### [Créer un gMSA](manage-containers/manage-serviceaccounts.md)
 #### [Configurer votre application pour utiliser un gMSA](manage-containers/gmsa-configure-app.md)
 #### [Exécuter un conteneur avec un gMSA](manage-containers/gmsa-run-container.md)
 #### [Orchestrer des conteneurs avec un gMSA](manage-containers/gmsa-orchestrate-containers.md)
 #### [Résoudre les problèmes de gMSA](manage-containers/gmsa-troubleshooting.md)
-### [Services d’impression](deploy-containers/print-spooler.md)
 ## Mise en réseau
 ### [Vue d’ensemble](container-networking/architecture.md)
 ### [Topologies et pilotes réseau](container-networking/network-drivers-topologies.md)
@@ -80,6 +83,7 @@
 # Ressources
 ## [Problèmes connus](manage-containers/known-issues.md)
 ## [Exemples de conteneurs](samples.md)
+## [Feuille de route des conteneurs Windows Server](https://github.com/microsoft/Windows-Containers/projects/1)
 ## [Résolution des problèmes](troubleshooting.md)
 ## [Forum sur les conteneurs](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
 ## [Vidéos et blogs de la communauté](communitylinks.md)
