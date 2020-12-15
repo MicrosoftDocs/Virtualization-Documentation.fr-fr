@@ -6,16 +6,16 @@ author: patricklang
 ms.date: 09/25/2019
 ms.topic: conceptual
 ms.assetid: 88e6e080-cf8f-41d8-a301-035959dc5ce0
-ms.openlocfilehash: 7fa5b50506fd9a2d7cd1c5fc84cc867dba412867
-ms.sourcegitcommit: bb18e6568393da748a6d511d41c3acbe38c62668
+ms.openlocfilehash: 375dbecece5f5166ce0d44c7317739658d42983f
+ms.sourcegitcommit: dc5d955689dfb51d43809b4dcf38468737d89c21
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88161958"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345712"
 ---
 # <a name="container-base-images"></a>Images de base de conteneur
 
-Windows propose quatre images de base de conteneur à partir desquelles les utilisateurs peuvent créer. Chaque image de base est une déclinaison distincte du système d’exploitation Windows, occupe un espace sur disque spécifique et contient une quantité différente de l’ensemble API Windows.
+Windows propose quatre images de base de conteneur à partir desquelles les utilisateurs peuvent créer. Chaque image de base est un type distinct du système d’exploitation Windows, occupe un espace sur disque spécifique et contient une quantité différente de l’ensemble d’API Windows.
 
 <ul class="columns is-multiline has-margin-left-none has-margin-bottom-none has-padding-top-medium">
     <li class="column is-one-quarter has-padding-top-small-mobile has-padding-bottom-small">
