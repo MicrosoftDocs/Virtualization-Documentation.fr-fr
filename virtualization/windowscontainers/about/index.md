@@ -7,18 +7,20 @@ ms.author: jgerend
 ms.date: 10/22/2019
 ms.topic: overview
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: 25221fdfac5507d169adcaf95d050bcb06c7baeb
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 3ace5ef044b18e8c479f01a30cac87ee11192fad
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990862"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182056"
 ---
 # <a name="windows-and-containers"></a>Windows et conteneurs
 
 Les conteneurs constituent une technologie d’empaquetage et d’exécution d’applications Windows et Linux, dans le cloud et divers environnements locaux. Les conteneurs offrent un environnement léger et isolé qui simplifie le développement, le déploiement et la gestion des applications. Les conteneurs démarrent et s’arrêtent rapidement, ce qui les rend idéaux pour les applications qui doivent s’adapter promptement à l’évolution de la demande. La nature légère du conteneur en fait également un outil pratique qui permet d’accroître la densité et l’utilisation de votre infrastructure.
 
 ![Graphique illustrant la façon dont les conteneurs peuvent s’exécuter dans le cloud ou localement, en prenant en charge des applications monolithiques ou des microservices écrits dans pratiquement n’importe quel langage.](media/about-3-box.png)
+
+Pour voir une feuille de route des fonctionnalités actuellement disponibles et planifiées, consultez la [feuille de route des conteneurs Windows Server](https://github.com/microsoft/Windows-Containers/projects/1).
 
 ## <a name="the-microsoft-container-ecosystem"></a>L’écosystème des conteneurs Microsoft
 
