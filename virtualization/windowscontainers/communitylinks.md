@@ -3,21 +3,22 @@ title: Vidéos et blogs de la communauté
 description: Liens vers des vidéos et des blogs très intéressants proposés par la communauté sur les conteneurs Windows
 keywords: Docker, conteneurs, Windows, exemples
 author: taylorb-microsoft
+ms.author: taylorb-microsoft
 ms.date: 12/19/2016
 ms.topic: article
 ms.assetid: cfbb2542-fead-48e7-8318-4da92a7b5b6f
-ms.openlocfilehash: a06168922306d2cc8f2f6ad4f314e7ddf8e7bf09
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 2d5edaff2eb09c351980197fcbe9a389cc8eab2a
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87984613"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182006"
 ---
 # <a name="community-videos-and-blogs"></a>Vidéos et blogs de la communauté
 
-Cette page contient des liens vers des vidéos et des blogs créés par des membres de la communauté sur les conteneurs.  Si vous connaissez une ressource intéressante ou si vous en avez vous-même créé une, envoyez une demande de publication pour l’ajouter à cette liste.
+Cette page contient des liens vers des vidéos et des blogs créés par des membres de la communauté de conteneurs.  Si vous connaissez une ressource importante ou si vous avez une ressource que vous souhaitez partager, envoyez un PR à ajouter à cette liste.
 
-## <a name="getting-started"></a>Prise en main
+## <a name="getting-started"></a>Mise en route
 
 [Exécuter des conteneurs Linux et Windows sur Windows 10](https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/) -Stefan Scherer
 
@@ -35,7 +36,7 @@ Cette page contient des liens vers des vidéos et des blogs créés par des memb
 
 [Docker avec Microsoft SQL 2016 + ASP.NET](https://blog.alexellis.io/docker-does-sql2016-aspnet/) - Alex Ellis
 
-[Tout d’abord : Jenkins ci avec des conteneurs Windows et docker](https://blog.alexellis.io/continuous-integration-docker-windows-containers/) -Alex Ellis
+[Tout d’abord : Jenkins ci avec des conteneurs Windows et docker](https://blog.alexellis.io/continuous-integration-docker-windows-containers/)  -Alex Ellis
 
 [Empaquetage de redims pour les conteneurs Windows](https://blog.alexellis.io/packaging-windows-containers/) -Alex Ellis
 
