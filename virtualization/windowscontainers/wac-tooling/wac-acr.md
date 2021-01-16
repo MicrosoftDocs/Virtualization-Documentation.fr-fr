@@ -2,17 +2,17 @@
 title: Gérer les Azure Container Registry sur le centre d’administration Windows
 description: Azure Container Registry sur le centre d’administration Windows
 keywords: ancrage, conteneurs, Centre d’administration Windows
-author: viniap
+author: vrapolinario
 ms.author: viniap
 ms.date: 12/24/2020
 ms.topic: tutorial
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: dbd20e6a9059444b4ce1c3b0fac676606f45135c
-ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
+ms.openlocfilehash: cba3af82164c157b416b8ed8c63998f90308187d
+ms.sourcegitcommit: 0fed672793b8b0c07253c498ac6f7c98ca5fe2b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98186662"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241660"
 ---
 # <a name="manage-azure-container-registry-using-windows-admin-center"></a>Gérer les Azure Container Registry à l’aide du centre d’administration Windows
 

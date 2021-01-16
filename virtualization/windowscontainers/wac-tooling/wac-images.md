@@ -2,23 +2,23 @@
 title: Créer des images de conteneur sur le centre d’administration Windows
 description: Images de conteneur sur le centre d’administration Windows
 keywords: ancrage, conteneurs, Centre d’administration Windows
-author: viniap
+author: vrapolinario
 ms.author: viniap
 ms.date: 12/23/2020
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 377df3bd6307bb40fd5effd3ad9405f84ccd2e83
-ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
+ms.openlocfilehash: f11e73f1865b8f41ec16ec8d9e4880b2d5d669b5
+ms.sourcegitcommit: 0fed672793b8b0c07253c498ac6f7c98ca5fe2b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98186622"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241640"
 ---
 # <a name="create-new-container-images-on-windows-admin-center"></a>Créer des images de conteneur dans le centre d’administration Windows
 
 Cette rubrique explique comment créer des images de conteneur à l’aide du centre d’administration Windows. Les images de conteneur sont utilisées pour créer des conteneurs sur des ordinateurs Windows ou d’autres services Cloud, tels que le service Azure Kubernetes. Pour plus d’informations sur les images Windows, consultez [vue d’ensemble des images conteneur](https://docs.microsoft.com/virtualization/windowscontainers/about/#container-images).
 
-## <a name="create-new-container-images"></a>Créer des images de conteneur
+## <a name="create-new-container-images"></a>Créer des images conteneur
 
 Lorsque vous travaillez avec des conteneurs, vous écrivez des instructions pour l’ancrage sur le fonctionnement de votre image conteneur, puis l’Ancreur crée une image de conteneur en fonction de ces instructions. Ces instructions sont enregistrées dans un fichier appelé « fichier dockerfile » qui est enregistré dans le même dossier que celui dans lequel votre application réside. 
 

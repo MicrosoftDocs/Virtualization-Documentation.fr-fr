@@ -1,18 +1,18 @@
 ---
 title: Exécuter des conteneurs sur le centre d’administration Windows
-description: Images de conteneur sur le centre d’administration Windows
+description: Exécuter un conteneur sur le centre d’administration Windows
 keywords: ancrage, conteneurs, Centre d’administration Windows
-author: viniap
+author: vrapolinario
 ms.author: viniap
 ms.date: 12/23/2020
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 1ae9beb105ed3d25122e603f86d5910c28eeb70b
-ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
+ms.openlocfilehash: d7786caa70d51270e685bf4264e92a3b84df7f1f
+ms.sourcegitcommit: 0fed672793b8b0c07253c498ac6f7c98ca5fe2b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98186627"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241610"
 ---
 # <a name="run-new-containers-using-windows-admin-center"></a>Exécuter de nouveaux conteneurs à l’aide du centre d’administration Windows
 
@@ -22,11 +22,11 @@ Le centre d’administration Windows vous permet d’exécuter des conteneurs lo
 2. Sous **Outils** sur le côté gauche, sélectionnez l’extension **conteneurs** . 
 3. Sélectionnez l’onglet **images** sous hôte du conteneur.
 
-    ![WAC-Images](./media/WAC-Images.png)
+    ![OngletImages](./media/WAC-Images.png)
 
 4. Sélectionnez l’image que vous souhaitez exécuter, puis cliquez sur **exécuter**.
 
-    ![WAC-RunContainers](./media/WAC-RunContainers.png)
+    ![Exécuter l’image](./media/WAC-RunContainers.png)
 
 5. Sous **image d’exécution**, vous pouvez spécifier la configuration liée au conteneur :
 
@@ -38,7 +38,7 @@ Le centre d’administration Windows vous permet d’exécuter des conteneurs lo
 
 6. Une fois que vous avez terminé de configurer le conteneur, sélectionnez **exécuter**. Vous pouvez afficher l’état des conteneurs en cours d’exécution sous l’onglet **conteneurs** :
 
-    ![WAC-Containers](./media/WAC-Containers.png)
+    ![Onglet Conteneurs](./media/WAC-Containers.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
