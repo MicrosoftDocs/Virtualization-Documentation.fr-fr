@@ -5,12 +5,13 @@ keywords: métadonnées, conteneurs, version
 author: taylorb-microsoft
 ms.author: jgerend
 ms.topic: conceptual
-ms.openlocfilehash: 2fdf8509e30f6c6c7c2288fae2ee17bcf624ff52
-ms.sourcegitcommit: 607413572dce012c2e09263c7b6dd984086cd9ad
+ms.date: 10/22/2020
+ms.openlocfilehash: a85bfc8a5f284d130cbf246b261d739d8c1a6d0b
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93075078"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182091"
 ---
 # <a name="windows-container-version-compatibility"></a>Compatibilité des versions avec les conteneurs Windows
 
@@ -164,7 +165,7 @@ Le démarrage des conteneurs Windows Server est bloqué quand le numéro de buil
 
 #### <a name="revision-number-patching"></a>Numéro de révision (mise à jour corrective)
 
-Actuellement, les conteneurs Windows Server ne prennent pas en charge les scénarios où des conteneurs basés sur Windows Server 2016 s’exécutent dans un système où les numéros de révision de l’hôte du conteneur et de l’image du conteneur diffèrent. Par exemple, si la version de l’hôte du conteneur est 10.0.14393. **1914** (Windows Server 2016 avec la mise à jour KB4051033) et celle de l’image du conteneur est 10.0.14393. **1944** (Windows Server 2016 avec la mise à jour KB4053579), l’image risque de ne pas démarrer.
+Actuellement, les conteneurs Windows Server ne prennent pas en charge les scénarios où des conteneurs basés sur Windows Server 2016 s’exécutent dans un système où les numéros de révision de l’hôte du conteneur et de l’image du conteneur diffèrent. Par exemple, si la version de l’hôte du conteneur est 10.0.14393.**1914** (Windows Server 2016 avec la mise à jour KB4051033) et celle de l’image du conteneur est 10.0.14393.**1944** (Windows Server 2016 avec la mise à jour KB4053579), l’image risque de ne pas démarrer.
 
 Toutefois, pour les hôtes ou les images utilisant Windows Server, version 1809 ou ultérieure, cette règle ne s’applique pas, et les révisions de l’hôte et de l’image du conteneur ne doivent pas nécessairement correspondre.
 
@@ -282,7 +283,7 @@ ID                  NAME                MODE                REPLICAS            
 xh6mwbdq2uil        angry_liskov        replicated          0/1                 windows/servercore/iis
 ```
 
-Exécutez la commande **docker service ps (nom du service** ) pour connaître l’état et les dernières tentatives :
+Exécutez la commande **docker service ps (nom du service**) pour connaître l’état et les dernières tentatives :
 
 ```dockerfile
 C:\Program Files\Docker>docker service ps angry_liskov
@@ -378,7 +379,7 @@ Voici comment utiliser des étiquettes et des contraintes pour faire correspondr
     docker node update --label-add OsVersion="$((Get-ComputerInfo).OsVersion)" $ENV:COMPUTERNAME
     ```
 
-    Par la suite, vous pourrez vérifier les étiquettes en exécutant la commande **docker node inspect** , qui doit afficher les étiquettes ajoutées récemment :
+    Par la suite, vous pourrez vérifier les étiquettes en exécutant la commande **docker node inspect**, qui doit afficher les étiquettes ajoutées récemment :
 
     ```yaml
            "Spec": {
@@ -576,7 +577,7 @@ Utilisons cet exemple pour montrer comment faire correspondre les versions :
 
     ```
 
-3. Vérifiez la présence des étiquettes en exécutant la commande **kubectl get nodes --show-labels** .
+3. Vérifiez la présence des étiquettes en exécutant la commande **kubectl get nodes --show-labels**.
 
     Dans cet exemple, la sortie doit ressembler à ceci :
 

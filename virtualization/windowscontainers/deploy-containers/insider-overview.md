@@ -2,14 +2,16 @@
 title: Utiliser des conteneurs avec le programme Windows Insider
 description: Découvrez comment prendre en main l’utilisation de conteneurs Windows avec le programme Windows Insider.
 keywords: docker, conteneurs, insider, windows
-author: cwilhit
+author: v-susbo
+ms.author: v-susbo
+ms.date: 12/29/2020
 ms.topic: how-to
-ms.openlocfilehash: fe657bb0c9456bda018c60cc8be9032b18d42989
-ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
+ms.openlocfilehash: f2eb6bce8ab482f8c1d34bdc9b7c5916ba0e708b
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85192156"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181986"
 ---
 # <a name="use-containers-with-the-windows-insider-program"></a>Utiliser des conteneurs avec le programme Windows Insider
 

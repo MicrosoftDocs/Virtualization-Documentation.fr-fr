@@ -2,14 +2,16 @@
 title: Accélération GPU dans les conteneurs Windows
 description: Quel est le niveau d’accélération GPU dans les conteneurs Windows
 keywords: docker, conteneurs, appareils, matériel
-author: cwilhit
+author: v-susbo
+ms.author: v-susbo
+ms.date: 12/29/2020
 ms.topic: how-to
-ms.openlocfilehash: 11ab6edb58c14c4532d69877533fb575f82d80cd
-ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
+ms.openlocfilehash: c6148f5703a3a50628ad81b506a7aac571781cd4
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85192266"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182026"
 ---
 # <a name="gpu-acceleration-in-windows-containers"></a>Accélération GPU dans les conteneurs Windows
 

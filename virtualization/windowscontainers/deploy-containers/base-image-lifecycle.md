@@ -2,16 +2,16 @@
 title: Cycles de vie de la maintenance des images de base
 description: Informations sur le cycle de vie des images de base de conteneur Windows.
 keywords: conteneurs windows, conteneurs, cycle de vie, informations sur la publication, image de base, image de base de conteneur
-author: Heidilohr
+author: v-susbo
 ms.author: helohr
 ms.date: 10/20/2020
 ms.topic: reference
-ms.openlocfilehash: a5076e0c355090e0487e074191bf706966f9767a
-ms.sourcegitcommit: 530c146a8e43b5cd5ce96b272facb7dd9d3c42da
+ms.openlocfilehash: ec466de78f55ba752a7f7747fbe6ee53ccf5f86a
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92238862"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182016"
 ---
 # <a name="base-image-servicing-lifecycles"></a>Cycles de vie de la maintenance des images de base
 

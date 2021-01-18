@@ -4,13 +4,14 @@ description: Comment les conteneurs Windows Server peuvent-ils utiliser les hôt
 keywords: conteneurs, volume, stockage, montage, montage lié
 author: cwilhit
 ms.author: jgerend
+ms.date: 09/25/2019
 ms.topic: overview
-ms.openlocfilehash: e5cc4770cfa014ca307db1bb7ec4a3bb81c2dd32
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 8bbb6a5116a8f6fcafcebbf8d96babc1f380b540
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990922"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181856"
 ---
 # <a name="container-storage-overview"></a>Vue d’ensemble du stockage de conteneurs
 

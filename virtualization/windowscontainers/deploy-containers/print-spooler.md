@@ -3,13 +3,15 @@ title: Spouleur d’impression dans des conteneurs Windows
 description: Explique le comportement de travail actuel du service de spouleur d’impression dans des conteneurs Windows.
 keywords: docker, conteneurs, imprimante, spouleur
 author: cwilhit
-ms.topic: conceptual
-ms.openlocfilehash: 3348fc4665a9fe88d1cd299df665e564fa176a7e
-ms.sourcegitcommit: 1bafb5de322763e7f8b0e840b96774e813c39749
+ms.author: cwilhit
+ms.date: 10/22/2019
+ms.topic: tutorial
+ms.openlocfilehash: df51140f3e44bf24c5481d23a3437796fe4c3641
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85192217"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181836"
 ---
 # <a name="print-spooler-in-windows-containers"></a>Spouleur d’impression dans des conteneurs Windows
 

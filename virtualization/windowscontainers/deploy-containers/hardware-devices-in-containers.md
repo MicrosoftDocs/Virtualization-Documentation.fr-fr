@@ -2,15 +2,16 @@
 title: Appareils dans des conteneurs sur Windows
 description: Quelle prise en charge des appareils existe-t-il pour les conteneurs sur Windows
 keywords: docker, conteneurs, appareils, matériel
-author: cwilhit
-ms.author: jgerend
+author: v-susbo
+ms.author: v-susbo
+ms.date: 10/20/2020
 ms.topic: how-to
-ms.openlocfilehash: 8ada973b6e79837374c5f3d918fb4c60da031b49
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 4194ad97e820407c94d70ab719d3a5667d68273d
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990942"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181846"
 ---
 # <a name="devices-in-containers-on-windows"></a>Appareils dans les conteneurs sur Windows
 
