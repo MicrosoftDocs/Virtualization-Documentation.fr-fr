@@ -7,12 +7,12 @@ ms.author: crwilhit
 ms.date: 11/12/2019
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 678e3d025dd8baa1dff1ead537b6bd2a747b7038
-ms.sourcegitcommit: bb18e6568393da748a6d511d41c3acbe38c62668
+ms.openlocfilehash: f85398d09bb608f04e01d86947cb7cd7afbf5c26
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88161799"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181908"
 ---
 # <a name="get-started-run-your-first-windows-container"></a>Bien démarrer : Exécuter votre premier conteneur Windows
 
@@ -88,6 +88,28 @@ Pour ce simple exemple, une image de conteneur « Hello World » est créée e
    docker run --rm helloworld cmd.exe /s /c type Hello.txt
    ```
    Résultat : Docker a créé un conteneur à partir de l’image « HelloWorld », Docker a démarré une instance de cmd.exe dans le conteneur, laquelle a lu notre fichier et a généré le contenu dans le shell. Comme dernière étape, Docker a arrêté et supprimé le conteneur.
+
+## <a name="run-a-windows-container-using-windows-admin-center"></a>Exécuter un conteneur Windows en utilisant Windows Admin Center
+
+Vous pouvez utiliser Windows Admin Center pour exécuter vos conteneurs localement. Plus précisément, vous utilisez l’extension Conteneurs de votre instance Windows Admin Center pour exécuter les conteneurs. Tout d’abord, ouvrez l’hôte de conteneur que vous voulez gérer puis, dans le volet Outils, sélectionnez l’extension Conteneurs. Ensuite, sélectionnez l’onglet **Images** à l’intérieur de l’extension Conteneurs sous Hôte de conteneur.
+
+![WAC-Images](./media/WAC-Images.png)
+
+Si votre hôte n’a pas d’image conteneur de base, sélectionnez l’option **Extraire** qui ouvre ceci :
+
+![WAC-Pull.png](./media/WAC-Pull.png)
+
+Dans les paramètres de **Extraire l’image conteneur**, spécifiez l’URL de l’image et la balise. Si vous n’êtes pas certain de l’image à extraire, notez que Windows Admin Center fournit une liste d’images courantes de Microsoft. Vous pouvez également fournir les informations d’identification pour extraire une image à partir d’un dépôt privé. Une fois que vous avez renseigné les informations nécessaires, cliquez sur **Extraire**. Windows Admin Center va démarrer le processus d’extraction sur l’hôte de conteneur. Une fois le téléchargement terminé, la nouvelle image apparaît sous l’onglet **Images**.
+
+Sélectionnez l’image que vous voulez exécuter, puis cliquez sur **Suivant**.
+
+![WAC-RunContainers](./media/WAC-RunContainers.png)
+
+Dans le menu **Exécuter**, définissez la configuration du conteneur, par exemple le nom du conteneur, le type d’isolation, les ports à publier, et l’allocation de mémoire et de processeur. En outre, vous pouvez ajouter des commandes d’exécution de Docker qui ne sont pas dans l’interface utilisateur, comme -v pour le volume persistant. Pour plus d’informations sur les paramètres d’exécution de Docker disponibles, consultez la [documentation](https://docs.docker.com/engine/reference/commandline/run/).
+
+Une fois que vous avez terminé la configuration du conteneur, cliquez sur **Exécuter**. Vous pouvez voir l’état des conteneurs en cours d’exécution sous l’onglet **Conteneurs** :
+
+![WAC-Containers](./media/WAC-Containers.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

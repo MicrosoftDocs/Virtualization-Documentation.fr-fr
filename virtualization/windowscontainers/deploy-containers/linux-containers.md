@@ -3,15 +3,16 @@ title: Conteneurs Linux sur Windows 10
 description: Découvrez les différentes façons dont vous pouvez utiliser Hyper-V pour exécuter des conteneurs Linux sur Windows 10 comme s’ils étaient natifs.
 keywords: conteneurs linux, docker, conteneurs, windows 10
 author: scooley
+ms.author: scooley
 ms.date: 09/17/2019
 ms.topic: overview
 ms.assetid: edfd11c8-ee99-42d8-9878-efc126fe1826
-ms.openlocfilehash: 107b81fb17fdaee10e901bda8adf5a58ceba1188
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: ede0387707b8200ee02c4cf347e5b8710e52a1cf
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985353"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181866"
 ---
 # <a name="linux-containers-on-windows-10"></a>Conteneurs Linux sur Windows 10
 
@@ -35,3 +36,8 @@ Dans ce modèle, tous les conteneurs Linux partagent un hôte de conteneur basé
 Cela signifie également que l’hôte de conteneur Linux (machine virtuelle Moby) doit exécuter le démon Docker et toutes les dépendances de celui-ci.
 
 Pour voir si vous opérez avec une machine virtuelle Moby, vérifiez le Gestionnaire Hyper-V pour machine virtuelle Moby soit en utilisant l’interface utilisateur du Gestionnaire Hyper-V, soit en exécutant `Get-VM` dans une fenêtre PowerShell avec élévation de privilèges.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+> [!div class="nextstepaction"]
+> [Configurer des conteneurs Linux](../quick-start/quick-start-windows-10-linux.md)

@@ -3,17 +3,20 @@ title: FAQ sur les conteneurs Windows
 description: FAQ sur les conteneurs Windows Server
 keywords: docker, conteneurs
 author: PatrickLang
+ms.author: PatrickLang
 ms.date: 10/25/2019
 ms.topic: overview
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: a1762a747a1a1f59681ebcbf5fb3376e869b0b9f
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 9489b785a097340de0d4acba7720ac7ae297739b
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87984623"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182036"
 ---
 # <a name="frequently-asked-questions-about-containers"></a>Questions fréquentes sur les conteneurs
+
+Vous avez une question sur les conteneurs Windows Server ? Vérifiez s’il y a une réponse à celle-ci dans la liste ci-dessous.
 
 ## <a name="whats-the-difference-between-linux-and-windows-server-containers"></a>Quelle est la différence entre les conteneurs Linux et Windows Server ?
 
@@ -24,6 +27,18 @@ Lorsqu'un client utilise des conteneurs Windows Server, ils peuvent être intég
 ## <a name="what-are-the-prerequisites-for-running-containers-on-windows"></a>Quelles sont les conditions préalables à l’exécution de conteneurs sur Windows ?
 
 Les conteneurs ont été introduits sur la plateforme avec Windows Server 2016. Pour utiliser des conteneurs, vous devez disposer de Windows Server 2016 ou de la Mise à jour anniversaire Windows 10 (version 1607) ou plus récente. Pour plus d’informations, consultez [Configuration requise](../deploy-containers/system-requirements.md).
+
+## <a name="what-windows-operating-systems-are-supported"></a>Quels sont les systèmes d’exploitation Windows pris en charge ?
+
+AKS sur Azure Stack HCI utilise Windows Server 2019 comme version du système d’exploitation hôte de conteneur et prend en charge seulement l’isolation des processus. Pour la compatibilité des versions des conteneurs Windows, consultez [Compatibilité des versions des conteneurs Windows](../deploy-containers/version-compatibility.md).
+
+## <a name="how-do-i-patch-my-windows-nodes"></a>Comment corriger mes nœuds Windows ?
+
+Les nœuds Windows Server dans AKS sur Azure Stack HCI doivent être mis à niveau pour recevoir les mises à jour et les correctifs les plus récents. Les mises à jour Windows ne sont pas activées sur les nœuds Windows dans AKS sur Azure Stack HCI. Cependant, AKS sur Azure Stack HCI rend les mises à jour Windows disponibles en mettant régulièrement à jour les images de nœud Windows Server.
+
+## <a name="can-my-windows-server-containers-use-gmsa"></a>Mes conteneurs Windows Server peuvent-ils utiliser gMSA ?
+
+Oui, gMSA est pris en charge avec les nœuds worker Windows joints à un domaine. Pour découvrir comment utiliser gMSA avec des conteneurs Windows, consultez [Préparer les nœuds Windows pour gMSA](https://docs.microsoft.com/azure-stack/aks-hci/prepare-windows-nodes-gmsa).
 
 ## <a name="what-are-wcow-and-lcow"></a>Que signifient WCOW et LCOW ?
 
