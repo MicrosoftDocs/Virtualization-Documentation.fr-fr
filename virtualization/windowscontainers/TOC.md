@@ -93,6 +93,7 @@
 ## [Problèmes connus](manage-containers/known-issues.md)
 ## [Exemples de conteneurs](samples.md)
 ## [Feuille de route des conteneurs Windows Server](https://github.com/microsoft/Windows-Containers/projects/1)
+## [Licences et tarifs](https://www.microsoft.com/en-us/windows-server/pricing)
 ## [Résolution des problèmes](troubleshooting.md)
 ## [Forum sur les conteneurs](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
 ## [Vidéos et blogs de la communauté](communitylinks.md)
